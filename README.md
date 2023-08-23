@@ -3,11 +3,11 @@
 <h3># O software passará por todos os ciclos de desenvolvimento:</h3>
 <p># Análises de requisitos</p>
 <p># Prototipação</p>
-<p># Modelagem do banco de dados</p>
-<p># Elaboração dos diagramas</p>
-<p># Desenvolvimento do banco de dados</p>
-<p># Desenvolvimento do Back-End</p>
+<p># Modelagem de banco de dados</p>
+<p># Elaboração de diagramas</p>
+<p># Desenvolvimento de banco de dados</p>
+<p># Desenvolvimento de Back-End</p>
 <p># Desenvolvimento de API RestFul</p>
-<p># Desenvolvimento do Front-End</p>
+<p># Desenvolvimento de Front-End</p>
 <p># Desenvolvimento de Mobile</p>
 <p># Implementação</p>
