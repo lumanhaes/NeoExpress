@@ -19,7 +19,7 @@ public class Conta {
     }
 //  #METODO COM PARAMETRO
     public void depositar(int numeroConta, int agencia, double valor){
-         saldo = saldo + valor;
+         this.saldo = saldo + valor;
     }
 
 //  #SOBRECARGA DE METODO
@@ -35,6 +35,9 @@ public class Conta {
     }
 
 //  #CONSTRUTORES
+    //Construtor padrão
+    public Conta() {}
+
 //  Construtores: construtores auxiliam na criação de objetos, passando parametros que recebem os atributos do objeto
     public Conta(int numeroConta, int agencia, double saldo, String tipoConta){
         this.numeroConta = numeroConta;

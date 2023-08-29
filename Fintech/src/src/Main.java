@@ -10,12 +10,14 @@ public class Main {
         Conta cc271075 = new Conta(271075, 0001, 50.00, "ContaCorrente");
 
         // #CRIANDO OBJETO USER MAS AGORA COM CONSTRUTOR
-        User user01 = new User("Lucas", 48030373880L, 392641483, "ramosmanhaes@outlook.com", "r1j2n3e4");
+        User user01 = new User("Lucas Manhães", 48030373880L, 392641483, "ramosmanhaes@outlook.com", "r1j2n3e4");
 
+        // #CRIANDO OBJETO USER MAS AGORA COM CONSTRUTOR
+        cc271075.depositar(271075, 0001, 1500.35);
 
-        cc271075.depositar(271075, 0001, 1500);
+        cc271075.sacar(1000, 10.14);
+        System.out.println(cc271075.exibirSaldo());
 
-        cc271075.sacar(1000, 10);
-        System.out.println(cc271075.saldo);
+        System.out.println(user01.exibirUsuario());
     }
 }

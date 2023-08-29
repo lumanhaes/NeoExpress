@@ -1,5 +1,4 @@
 package com.neoexpress.user;
-import com.neoexpress.conta.Conta;
 import java.util.Calendar;
 
 public class User {
@@ -11,6 +10,11 @@ public class User {
     public Calendar dataNasc;
     public String email;
     public String senha;
+
+// METODOS
+    public String exibirUsuario(){
+        return "Nome: " + nome + "\nE-Mail: " + email;
+    }
 
 // CONSTRUTOR
     public User(String nome, long cpf, int rg, String email, String senha){
