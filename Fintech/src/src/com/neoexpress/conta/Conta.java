@@ -4,12 +4,22 @@ import java.util.Calendar;
 
 public class Conta {
     
-    // ATRIBUTOS
+//      ATRIBUTOS
     public int numeroConta;
     public int agencia;
     public double saldo;
     public Calendar dataAbertura;
     public String tipoConta;
-    // ATRIBUTOS DE OUTRA CLASSE
+
+    // OBJETO COM ATRIBUTOS DE OUTRA CLASSE
     public User user01 = new User();
+
+//        METODO
+     public double exibirSaldo(){
+        return saldo;
+    }
+//        METODO COM PARAMETRO
+    public void depositar(int numeroConta, int agencia, double valor){
+         saldo = saldo + valor;
+    }
 }

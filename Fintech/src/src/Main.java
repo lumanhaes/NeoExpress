@@ -13,7 +13,7 @@ public class Main {
         conta01.numeroConta = 271075;
         conta01.agencia = 0001;
         conta01.tipoConta = "ContaCorrente";
-        conta01.saldo = 00.00;
+        conta01.saldo = 50.00;
 
         // ATRIBUTOS DE OUTRA CLASSE INSTANCIADA NA CLASSE CONTA
         conta01.user01.nome = "Lucas Ramos Manhães";
@@ -22,6 +22,7 @@ public class Main {
         conta01.user01.email = "ramosmanhaes@outlook.com";
         conta01.user01.senha = "r1j2n3e4";
 
-        System.out.println(conta01.user01.nome);
+        conta01.depositar(271075, 0001, 1500);
+        System.out.println(conta01.saldo);
     }
 }

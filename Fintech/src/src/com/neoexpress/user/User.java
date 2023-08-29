@@ -3,12 +3,14 @@ import java.util.Calendar;
 
 public class User {
 
-    //ATRIBUTOS
+//  ATRIBUTOS
     public String nome;
     public long cpf;
     public int rg;
     public Calendar dataNasc;
     public String email;
     public String senha;
+
+//  METODOS
 
 }
