@@ -11,8 +11,7 @@ public class Conta {
     public Calendar dataAbertura;
     public String tipoConta;
 
-//  #OBJETO COM ATRIBUTOS DE OUTRA CLASSE
-    public User user01 = new User();
+
 
 //  #METODO
     public double exibirSaldo(){

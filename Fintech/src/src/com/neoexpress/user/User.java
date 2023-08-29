@@ -12,4 +12,12 @@ public class User {
     public String email;
     public String senha;
 
+// CONSTRUTOR
+    public User(String nome, long cpf, int rg, String email, String senha){
+        this.nome = nome;
+        this.cpf = cpf;
+        this.rg = rg;
+        this.email = email;
+        this.senha = senha;
+    }
 }
