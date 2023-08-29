@@ -23,6 +23,8 @@ public class Main {
         conta01.user01.senha = "r1j2n3e4";
 
         conta01.depositar(271075, 0001, 1500);
+
+        conta01.sacar(1000, 10);
         System.out.println(conta01.saldo);
     }
 }

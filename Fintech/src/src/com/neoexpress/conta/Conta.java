@@ -22,4 +22,16 @@ public class Conta {
     public void depositar(int numeroConta, int agencia, double valor){
          saldo = saldo + valor;
     }
+
+//       SOBRECARGA DE METODO
+//  sobrecarga: permite mais de um comportamento para aquele objeto
+//  sem sobrecarga
+    public void sacar(double valor){
+         saldo = saldo - valor;
+    }
+
+//  com sobrecarga
+    public void sacar(double valor, double taxa){
+         this.saldo = saldo - valor - taxa;       // this.saldo referencia ao atributo saldo do objeto conta e não a variavel do metodo
+    }
 }
