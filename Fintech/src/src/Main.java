@@ -6,14 +6,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanf = new Scanner(System.in);
 
-        // OBJETO
-        Conta conta01 = new Conta();
-
-        // ATRIBUTOS
-        conta01.numeroConta = 271075;
-        conta01.agencia = 0001;
-        conta01.tipoConta = "ContaCorrente";
-        conta01.saldo = 50.00;
+        // CRIANDO OBJETO COM CONSTRUTOR
+        Conta conta01 = new Conta(271075, 0001, 50.00, "ContaCorrente");
 
         // ATRIBUTOS DE OUTRA CLASSE INSTANCIADA NA CLASSE CONTA
         conta01.user01.nome = "Lucas Ramos Manhães";

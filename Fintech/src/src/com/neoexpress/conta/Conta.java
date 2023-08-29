@@ -4,26 +4,26 @@ import java.util.Calendar;
 
 public class Conta {
     
-//      ATRIBUTOS
+//  #ATRIBUTOS
     public int numeroConta;
     public int agencia;
     public double saldo;
     public Calendar dataAbertura;
     public String tipoConta;
 
-    // OBJETO COM ATRIBUTOS DE OUTRA CLASSE
+//  #OBJETO COM ATRIBUTOS DE OUTRA CLASSE
     public User user01 = new User();
 
-//        METODO
-     public double exibirSaldo(){
+//  #METODO
+    public double exibirSaldo(){
         return saldo;
     }
-//        METODO COM PARAMETRO
+//  #METODO COM PARAMETRO
     public void depositar(int numeroConta, int agencia, double valor){
          saldo = saldo + valor;
     }
 
-//       SOBRECARGA DE METODO
+//  #SOBRECARGA DE METODO
 //  sobrecarga: permite mais de um comportamento para aquele objeto
 //  sem sobrecarga
     public void sacar(double valor){
@@ -32,6 +32,16 @@ public class Conta {
 
 //  com sobrecarga
     public void sacar(double valor, double taxa){
-         this.saldo = saldo - valor - taxa;       // this.saldo referencia ao atributo saldo do objeto conta e não a variavel do metodo
+         this.saldo = saldo - valor - taxa;
+    }
+
+//  #CONSTRUTORES
+//  Construtores: construtores auxiliam na criação de objetos, passando parametros que recebem os atributos do objeto
+    public Conta(int numeroConta, int agencia, double saldo, String tipoConta){
+        this.numeroConta = numeroConta;
+        this.agencia = agencia;
+        this.saldo = saldo;
+        this.tipoConta = tipoConta;
+        // this.numeroConta referencia ao atributo numeroConta do objeto conta e não a variavel numeroConta do construtor
     }
 }
