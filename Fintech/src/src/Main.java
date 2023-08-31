@@ -1,22 +1,27 @@
-import com.neoexpress.conta.Conta;
-import com.neoexpress.user.User;
-import java.util.Scanner;
+//  #HERANÇA
+//  Na herança temos uma superclasse ou classe pai
+//  as classes filhas ou subclasses irão herdar atributos e metodos da superclasse
+//  Na herança reaproveitamos o codigo da superclasse e colocamos caracteristicas
+//  que são especificas da subclasse, nao pode existir heranças multiplas de superclasses.
+//  Toda e qualquer classe herda da superclasse object
+
+import br.com.neoexpress.account.Account;
+import br.com.neoexpress.user.User;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanf = new Scanner(System.in);
 
-        // #CRIANDO OBJETO CONTA MAS AGORA COM CONSTRUTOR
-        Conta cc271075 = new Conta(271075, 0001, 50.00,"30/08/2023" ,"ContaCorrente");
+        // OBJETO
+        // Adicionando um objeto do tipo conta;
+        Account account001 = new Account(248756, 0001, 50.00, "cc", "31/08/2023");
 
-        // #CRIANDO OBJETO USER MAS AGORA COM CONSTRUTOR
-        User user01 = new User("Lucas Manhães", 48030373880L, 392641483,"27/08/1998" ,"ramosmanhaes@outlook.com", "r1j2n3e4");
 
-        //cc271075.depositar(271075, 0001, 1500.35);
-        cc271075.setDepositar(271075, 0001, 1500.35);
-        cc271075.setSacar(1000, 10.14);
+        //  METODO
 
-        System.out.println(cc271075.getSaldo());
-        System.out.println(user01.getUser());
+        // Tranferir doc
+        account001.setTranferDoc(4578, 0001, 10);
+        System.out.println(account001.getAccount());
+
+
     }
 }
