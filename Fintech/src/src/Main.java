@@ -1,27 +1,24 @@
-//  #HERANÇA
-//  Na herança temos uma superclasse ou classe pai
-//  as classes filhas ou subclasses irão herdar atributos e metodos da superclasse
-//  Na herança reaproveitamos o codigo da superclasse e colocamos caracteristicas
-//  que são especificas da subclasse, nao pode existir heranças multiplas de superclasses.
-//  Toda e qualquer classe herda da superclasse object
-
-import br.com.neoexpress.account.Account;
-import br.com.neoexpress.user.User;
+import br.com.neoexpress.conta.Conta;
+import br.com.neoexpress.usuario.Usuario;
 
 public class Main {
     public static void main(String[] args) {
+        Usuario Lucas = new Usuario();
+        Lucas.cadastrarUsuario("Lucas", "27/08/1998", "48030373880", "lucas@outlook.com", 392641421, 916683451);
+        Conta cc01 = new Conta();
+        cc01.cadastrarConta(Lucas,2563,385178, 50);
+        cc01.exibirConta();
 
-        // OBJETO
-        // Adicionando um objeto do tipo conta;
-        Account account001 = new Account(248756, 0001, 50.00, "cc", "31/08/2023");
-
-
-        //  METODO
-
-        // Tranferir doc
-        account001.setTranferDoc(4578, 0001, 10);
-        System.out.println(account001.getAccount());
+        Usuario Fernanda = new Usuario();
+        Fernanda.cadastrarUsuario("Fernanda", "11/09/2023", "4803034521", "fernanda@example.com", 392641549, 91664578);
+        Conta cc02 = new Conta();
+        cc02.cadastrarConta(Fernanda, 2563, 385179, 100);
+        cc02.exibirConta();
+        cc02.transferir(100, cc01);
+        cc02.exibirConta();
+        cc01.exibirConta();
 
 
     }
+
 }
