@@ -7,10 +7,10 @@ public class ContaCorrente extends Conta implements Serializable {
     private String tipoConta = "CC";
     private double taxaCC = 2.20;
 
-    public String getTipoConta() {
+    protected String getTipoConta() {
         return tipoConta;
     }
-    public void setTipoConta(String tipoConta) {
+    protected void setTipoConta(String tipoConta) {
         this.tipoConta = tipoConta;
     }
 
