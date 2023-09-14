@@ -1,49 +1,49 @@
 package br.com.neoexpress.usuario;
 
-public class Usuario{
+import java.io.Serializable;
+
+public class Usuario implements Serializable {
       private String nome, dtNasc, cpf, email;
       private int rg, cel;
 
       public String getNome() {
             return nome;
       }
-      private void setNome(String nome) {
+      protected void setNome(String nome) {
             this.nome = nome;
       }
-      private String getDtNasc() {
+      protected String getDtNasc() {
             return dtNasc;
       }
-      private void setDtNasc(String dtNasc) {
+      protected void setDtNasc(String dtNasc) {
             this.dtNasc = dtNasc;
       }
-      private String getCpf() {
+      protected String getCpf() {
             return cpf;
       }
-      private void setCpf(String cpf) {
+      protected void setCpf(String cpf) {
             this.cpf = cpf;
       }
-      private String getEmail() {
+      protected String getEmail() {
             return email;
       }
-      private void setEmail(String email) {
+      protected void setEmail(String email) {
             this.email = email;
       }
-      private int getCel() {
+      protected int getCel() {
             return cel;
       }
-      private void setCel(int cel) {
+      protected void setCel(int cel) {
             this.cel = cel;
       }
-      private int getRg() {
+      protected int getRg() {
             return rg;
       }
-      private void setRg(int rg) {
+      protected void setRg(int rg) {
             this.rg = rg;
       }
 
-      public void cadastrarUsuario(String nome, String dtNasc, String cpf, String email, int rg, int cel){
+      public Usuario(String nome, String dtNasc, String cpf, String email, int rg, int cel){
             setNome(nome); setDtNasc(dtNasc); setCpf(cpf); setEmail(email); setRg(rg); setCel(cel);
       }
-
-      public Usuario(){};
 }

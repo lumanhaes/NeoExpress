@@ -1,44 +1,43 @@
 package br.com.neoexpress.conta;
 import br.com.neoexpress.usuario.Usuario;
+import java.io.Serializable;
 
-public class Conta{
+public class Conta implements Serializable {
     private Usuario titular;
     private int agencia, conta;
-    private double saldo;
+    private double saldo = 0;
 
-
-    private Usuario getTitular() {
+    protected Usuario getTitular() {
         return titular;
     }
-    private void setTitular(Usuario titular) {
+    protected void setTitular(Usuario titular) {
         this.titular = titular;
     }
-    private int getAgencia() {
+    protected int getAgencia() {
         return agencia;
     }
-    private void setAgencia(int agencia) {
+    protected void setAgencia(int agencia) {
         this.agencia = agencia;
     }
-
-    private double getSaldo() {
+    protected int getConta() {
+        return conta;
+    }
+    protected void setConta(int conta) {
+        this.conta = conta;
+    }
+    protected double getSaldo() {
         return saldo;
     }
-    private void setSaldo(double saldo) {
+    protected void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
     public void exibirConta(){
         System.out.println("\nTitular: " + titular.getNome() + "\nAgencia: " + agencia + "\nConta: " + conta + "\nSaldo: " + saldo);
     }
-
-    public void cadastrarConta(Usuario titular, int agencia, int conta, double saldo){
-        setTitular(titular); setAgencia(agencia); this.conta = conta; setSaldo(saldo);
-    }
-
     public void depositar(double valor){
         this.saldo += valor;
     }
-
     public void sacar(double valor){
         if(this.saldo < valor){
             System.out.println("\nSaldo insuficiente"); ;
@@ -48,7 +47,6 @@ public class Conta{
             System.out.println("\nSaque realizado");
         }
     }
-
     public void transferir(double valor, Conta contaDestino){
         if(this.saldo >= valor){
             this.saldo -= valor;
@@ -57,5 +55,10 @@ public class Conta{
         }else{
             System.out.println("\nSaldo insuficiente");
         }
+    }
+
+    public Conta(){}
+    public Conta(Usuario titular, int agencia, int conta, double saldo){
+        setTitular(titular); setAgencia(agencia); this.conta = conta; setSaldo(saldo);
     }
 }

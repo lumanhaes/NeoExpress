@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35b9b4bc-8d2c-4e2f-8466-e9a479001dff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Fintech/src/src/br/com/neoexpress/conta/ContaCorrente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fintech/out/production/src/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Fintech/out/production/src/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fintech/out/production/src/br/com/neoexpress/account/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fintech/out/production/src/br/com/neoexpress/user/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fintech/src/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fintech/src/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fintech/src/src/br/com/neoexpress/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fintech/src/src/br/com/neoexpress/conta/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fintech/src/src/br/com/neoexpress/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fintech/src/src/br/com/neoexpress/cliente/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +15,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2VFYvPWmjKucEFNqhadmzPC5KXR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,7 +29,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "G:/Meu Drive/06 - Projetos/NeoExpress",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Lucas/OneDrive/Workspace/NeoExpress",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -62,6 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694433527575</updated>
       <workItem from="1694433528633" duration="294000" />
+      <workItem from="1694695660837" duration="103000" />
     </task>
     <servers />
   </component>
