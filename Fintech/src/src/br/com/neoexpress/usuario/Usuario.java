@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Usuario implements Serializable {
       private String nome, dtNasc, cpf, email;
-      private int rg, cel;
+      private int senha, rg, cel;
 
       public String getNome() {
             return nome;
@@ -42,8 +42,21 @@ public class Usuario implements Serializable {
       protected void setRg(int rg) {
             this.rg = rg;
       }
+      protected void setSenha(int senha) {
+            this.senha = senha;
+      }
 
-      public Usuario(String nome, String dtNasc, String cpf, String email, int rg, int cel){
-            setNome(nome); setDtNasc(dtNasc); setCpf(cpf); setEmail(email); setRg(rg); setCel(cel);
+      public boolean autenticacao(int senha){
+            if(this.senha == senha){
+                  return true;
+            }
+            else{
+                  return false;
+            }
+      }
+
+      public Usuario(){}
+      public Usuario(String nome, int senha, String dtNasc, String cpf, String email, int rg, int cel){
+            setNome(nome); setSenha(senha); ;setDtNasc(dtNasc); setCpf(cpf); setEmail(email); setRg(rg); setCel(cel);
       }
 }

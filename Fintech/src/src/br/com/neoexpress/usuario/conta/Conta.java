@@ -1,9 +1,9 @@
-package br.com.neoexpress.conta;
+package br.com.neoexpress.usuario.conta;
 import br.com.neoexpress.usuario.Usuario;
 import java.io.Serializable;
 
 //  CLASSE ABSTRATA - Não é mais possível instanciar um objeto a partir da classe Conta
-public abstract class Conta implements Serializable {
+public abstract class Conta extends Usuario implements Serializable {
     private Usuario titular;
     private int agencia, conta;
     private double saldo = 0;
@@ -34,29 +34,16 @@ public abstract class Conta implements Serializable {
     }
 
     public abstract void exibirConta();
+
     public void depositar(double valor){
         this.saldo += valor;
-    }
-    public void sacar(double valor){
-        if(this.saldo < valor){
-            System.out.println("\nSaldo insuficiente"); ;
-        }
-        else{
-            this.saldo -= valor;
-            System.out.println("\nSaque realizado");
-        }
-    }
-    public void transferir(double valor, Conta contaDestino){
-        if(this.saldo >= valor){
-            this.saldo -= valor;
-            contaDestino.saldo += valor;
-            System.out.println("\nTrânsferência realizada");
-        }else{
-            System.out.println("\nSaldo insuficiente");
-        }
+        System.out.println("\nDeposito concluído");
     }
 
-    public Conta(){}
+    public abstract void sacar(int senha, double valor);
+
+    public abstract void transferir(int senha, double valor, Conta contaDestino);
+
     public Conta(Usuario titular, int agencia, int conta, double saldo){
         setTitular(titular); setAgencia(agencia); this.conta = conta; setSaldo(saldo);
     }
